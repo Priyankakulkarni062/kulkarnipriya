@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    public class MainActivity extends Activity {
+
+    protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    final TextView helloTextView = (TextView) findViewById(R.id.text_view_id);
+    helloTextView.setText(R.string.user_greeting);
+    }
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="LOGIN"
+            android:height="190px"
+            android:width="250px"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="190px"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp" xmlns:tools="http://schemas.android.com/tools" tools:ignore="HardcodedText">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/textview_border"
+                android:paddingLeft="30px"
+                android:paddingTop="10px"
+                android:paddingBottom="5px"
+                android:text="Email or Phone Number"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="290px"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:src="@drawable/img"
+            android:layout_width = "25px"
+            android:layout_height= "35px"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="380px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="310px"
+            android:layout_marginTop="380px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp" xmlns:tools="http://schemas.android.com/tools" tools:ignore="HardcodedText">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/textview_border"
+                android:paddingLeft="30px"
+                android:paddingTop="10px"
+                android:paddingBottom="5px"
+                android:text="Password"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="490px"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:src="@drawable/img"
+            android:layout_width = "25px"
+            android:layout_height= "35px"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="580px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="310px"
+            android:layout_marginTop="580px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_view_id3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Forgot Password ?"
+            android:height="190px"
+            android:width="850px"
+            android:layout_marginLeft="420px"
+            android:layout_marginTop="700px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="270px"
+            android:layout_height="90px"
+            android:layout_marginLeft="220px"
+            android:layout_marginTop="900px"
+            android:background="@drawable/borderradius"
+            android:text="LOGIN" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
