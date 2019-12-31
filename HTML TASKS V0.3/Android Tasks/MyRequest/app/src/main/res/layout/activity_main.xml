@@ -86,15 +86,17 @@
             android:layout_height="150px"
             android:background="@drawable/text"
             android:orientation="horizontal"
+
             >
             <LinearLayout
-                android:layout_width="150px"
-                android:layout_height="match_parent">
+                android:layout_width="210px"
+                android:layout_height="match_parent"
+                android:paddingLeft="80px">
                 <ImageView
                     android:layout_width="100px"
                     android:layout_height="90px"
                     android:src="@drawable/pic2"
-                    android:width="40px"
+                    android:width="60px"
                     android:height="40px"
                     android:layout_marginTop="20px"/>
 
@@ -117,14 +119,17 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300px"
+            android:layout_height="400px"
             android:background="@drawable/text"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="30px"
+            android:paddingBottom="30px">
 
             <LinearLayout
                 android:layout_width="600px"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="80px">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80px"
@@ -162,7 +167,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
                 <ImageView
                     android:layout_width="100px"
                     android:layout_height="90px"
@@ -176,14 +182,17 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300px"
+            android:layout_height="400px"
             android:background="@drawable/text"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="30px"
+            android:paddingBottom="30px">
 
             <LinearLayout
                 android:layout_width="600px"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="80px">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80px"
@@ -235,14 +244,18 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300px"
+            android:layout_height="400px"
             android:background="@drawable/text"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            >
 
             <LinearLayout
                 android:layout_width="600px"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="80px">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80px"
@@ -295,14 +308,19 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300px"
+            android:layout_height="400px"
             android:background="@drawable/text"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            >
 
             <LinearLayout
-                android:layout_width="600px"
+                android:layout_width="550px"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="80px"
+               >
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80px"
@@ -357,7 +375,9 @@
             android:layout_width="match_parent"
             android:layout_height="100px"
             android:background="@drawable/text"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+
+            >
 
             <LinearLayout
                 android:layout_width="450px"
