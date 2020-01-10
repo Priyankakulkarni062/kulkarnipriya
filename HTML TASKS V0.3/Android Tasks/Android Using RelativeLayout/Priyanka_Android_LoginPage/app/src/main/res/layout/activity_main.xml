@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:height="100px"
+            android:width="250px"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/box"
+            android:paddingLeft="30px"
+            android:paddingTop="10px"
+            android:paddingBottom="5px"
+            android:text="Email or Phone Number"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            />
+        <ImageView
+
+            android:src="@drawable/img1"
+            android:layout_width = "25px"
+            android:layout_height= "35px"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="165dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:textColor="@android:color/holo_red_light"
+
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="160dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/box"
+            android:paddingLeft="30px"
+            android:paddingTop="10px"
+            android:paddingBottom="5px"
+            android:text="Password"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="210dp"
+
+            />
+        <ImageView
+
+            android:src="@drawable/img1"
+            android:layout_width = "25px"
+            android:layout_height= "35px"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="255dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="253dp"/>
+
+        <TextView
+            android:id="@+id/text_view_id3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Forgot Password ?"
+            android:height="40dp"
+            android:width="150dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="295dp"/>
+        <Button
+            android:layout_width="270px"
+            android:layout_height="90px"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="370dp"
+            android:background="@drawable/button_style"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
