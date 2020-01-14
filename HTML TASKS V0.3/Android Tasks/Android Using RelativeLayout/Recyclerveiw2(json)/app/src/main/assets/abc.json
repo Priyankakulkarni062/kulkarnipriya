@@ -1,0 +1,25 @@
+{
+  "Student": [
+    {
+      "Name": "Pooja",
+      "id": "1",
+      "RollNO": "20",
+      "Add": "#aaaa"
+
+    },
+    {
+      "Name": "Rahul",
+      "id": "2",
+      "RollNO": "30",
+      "Add": "#bbbbb"
+    },
+    {
+      "Name": "jhon",
+      "id": "3",
+      "RollNO": "40",
+      "Add": "#ccccccc"
+    }
+  ]
+
+
+}
