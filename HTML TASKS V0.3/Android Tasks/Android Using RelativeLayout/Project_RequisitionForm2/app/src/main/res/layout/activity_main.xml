@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img1"
+            android:background="#F6F8F9"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="REQUISITION"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="1"
+                android:background="@drawable/cir2"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                android:layout_marginLeft="50px"/>
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="70px"
+                android:paddingTop="1px"
+                android:background="@drawable/line"
+                />
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="2"
+                android:background="@drawable/cir1"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                />
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="70px"
+                android:paddingTop="1px"
+                android:background="@drawable/line"
+                />
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="3"
+                android:background="@drawable/cir2"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                />
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="70px"
+                android:paddingTop="1px"
+                android:background="@drawable/line"
+                />
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="4"
+                android:background="@drawable/cir2"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                />
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="70px"
+                android:paddingTop="1px"
+                android:background="@drawable/line"
+                />
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="5"
+                android:background="@drawable/cir2"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                />
+            <TextView
+                android:layout_width="50px"
+                android:layout_height="70px"
+                android:paddingTop="1px"
+                android:background="@drawable/line"
+                />
+            <TextView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:text="6"
+                android:background="@drawable/cir2"
+                android:textAlignment="center"
+                android:paddingTop="7px"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:padding="10dp"
+        android:background="@drawable/background">
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:text="APPROVAL(S)"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ADD APPROVER"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/item"
+        android:layout_marginTop="260dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE DRAFT"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            android:background="@drawable/underline"
+
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="NEXT ->"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/button"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
