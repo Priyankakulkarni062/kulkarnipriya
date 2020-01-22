@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:layout_width="157dp"
+        android:layout_height="144dp"
+        app:useMaterialThemeColors="false"
+
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="350dp"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.chip.Chip
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="hello_world"
+        tools:ignore="MissingConstraints"
+        />
+    <com.google.android.material.chip.Chip
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_marginTop="320dp"/>
+    <com.google.android.material.chip.Chip
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome"
+        android:layout_marginTop="400dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/img1"
+        android:layout_marginTop="450dp"
+
+       />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="H"
+        android:layout_marginTop="530dp"/>
+
+
+    <Switch
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="641dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_marginTop="280dp"/>
+
+
+</RelativeLayout>
