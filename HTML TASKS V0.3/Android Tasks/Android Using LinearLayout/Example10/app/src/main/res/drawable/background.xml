@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:color="@color/colorButton" android:state_pressed="true">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
+    <item>@style/Widget.MaterialComponents.ExtendedFloatingActionButton</item>
+    <item android:color="@color/checkbox" android:state_pressed="true">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+    <item android:color="@color/buttonT" >style="@style/Widget.MaterialComponents.Button"</item>
+    <item android:color="@color/colorPrimaryDark" android:state_pressed="true"></item>
+<item android:color="@color/Switch"
+    android:state_pressed="false" >
+    @style/Widget.MaterialComponents.CompoundButton.Switch
+</item>
+
+</selector>
