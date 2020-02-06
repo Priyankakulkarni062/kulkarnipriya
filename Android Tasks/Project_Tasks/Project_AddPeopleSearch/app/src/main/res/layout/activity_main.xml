@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img2"
+            android:background="#F6F8F9"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add Approver"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/box"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Search"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="130dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Results Found"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We can’t find any item matching your search"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:background="@drawable/underline"
+            android:textColor="#595959"
+            />
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/dot"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:text="None selected"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+
+                android:textColor="#595959"
+                android:padding="5px"
+
+
+                />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="DONE"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
