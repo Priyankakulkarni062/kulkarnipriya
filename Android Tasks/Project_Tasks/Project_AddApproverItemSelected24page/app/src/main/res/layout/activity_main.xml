@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img1"
+            android:background="#F6F8F9"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Add Approver"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"/>
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/box"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Search"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="130dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="80dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="550dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            android:background="@drawable/underline"
+            android:textColor="#595959"
+            android:layout_marginRight="110dp"
+
+            />
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/dot">
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:text="None selected"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+
+                android:textColor="#595959"
+                android:padding="5px"
+
+
+                />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="DONE"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
