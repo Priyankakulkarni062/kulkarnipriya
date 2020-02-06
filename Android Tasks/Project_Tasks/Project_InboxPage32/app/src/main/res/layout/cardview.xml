@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:background="@drawable/background"
+        android:layout_marginBottom="10dp"
+
+
+        >
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img2"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Sameera Rautela"
+                android:id="@+id/item1"
+                android:textColor="#000"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/item2"
+                android:text="Lorem ipsum doler sit amet."
+                android:padding="5dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img3"
+            android:paddingTop="15dp"
+
+
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
