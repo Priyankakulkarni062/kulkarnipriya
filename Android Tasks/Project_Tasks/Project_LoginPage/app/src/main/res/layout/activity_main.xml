@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="304dp"
+        android:layout_height="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#747474"
+            android:textSize="18dp"
+            tools:ignore="InvalidId"
+
+            tools:layout_editor_absoluteX="-6dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="140dp"
+            android:paddingBottom="10dp"
+            android:text="Email or Phone Number"
+            android:textColor="#747474"
+            app:layout_constraintTop_toTopOf="@id/text1" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+
+            android:paddingTop="5dp"
+
+            android:paddingBottom="5dp"
+            android:src="@drawable/img1"
+            app:layout_constraintTop_toTopOf="@id/item2"
+
+            />
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="5dp"
+            android:text="This field is required"
+            android:textColor="#BF574A"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            app:layout_constraintTop_toTopOf="@id/item2"
+            tools:layout_editor_absoluteX="28dp" />
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/background"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="230dp"
+            android:paddingBottom="10dp"
+            android:text="Password"
+            android:textColor="#747474"
+            app:layout_constraintTop_toTopOf="@id/item2"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+
+            android:paddingTop="5dp"
+
+            android:paddingBottom="5dp"
+            android:src="@drawable/img1"
+            app:layout_constraintTop_toTopOf="@id/item4"
+
+            />
+
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="5dp"
+            android:text="This field is required"
+            android:textColor="#BF574A"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            app:layout_constraintTop_toTopOf="@id/item4"
+            tools:layout_editor_absoluteX="28dp" />
+
+        <TextView
+            android:id="@+id/item6"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+
+            android:paddingLeft="165dp"
+            android:paddingTop="5dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="5dp"
+            android:text="Forgot password?"
+            android:textColor="#747474"
+            app:layout_constraintTop_toTopOf="@id/item5"
+            tools:layout_editor_absoluteX="63dp" />
+
+        <Button
+            android:id="@+id/buttton1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button"
+            android:text="LOGIN"
+            android:textColor="#FFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item6"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
