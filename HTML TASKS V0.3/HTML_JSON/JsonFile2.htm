@@ -3,10 +3,6 @@
 <body>
 <div id="parent"></div>
 
-
-<button type="button" onclick="myFunction()">Hide content of p</button>
-			
-
 <script>
 var ajaxRequest = new XMLHttpRequest();
 ajaxRequest.onreadystatechange = function() {
@@ -17,36 +13,47 @@ ajaxRequest.onreadystatechange = function() {
     var parent = document.getElementById('parent');
     var cont = document.createElement("div");
     parent.appendChild(cont);
-    
-    for(i=0;i<info.length;i++){
+
+
+  for(i=0;i<info.length;i++){
 
   var card=document.createElement("div");
   cont.appendChild(card);
   cont.style="background:#32BDD2";
   
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.innerHTML = info[i].user;
+
   
+
   var image = document.createElement("img");
   cont.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:120px;padding-right:10px";
 
-var text = document.createElement("div");
-  cont.appendChild(text);
-  text.innerHTML = info[i].user;
-  text.style="float:left;padding-right:10px";
+
   
-    var text = document.createElement("div");
+  
+
+  var text = document.createElement("div");
   cont.appendChild(text);
   text.innerHTML = info[i].tags;
-  text.style="float:right";
- }
+  
+
+  var text = document.createElement("div");
+  cont.appendChild(text);
+ 
+  
+  
+
 
   
+   }
   }
   };
 
    ajaxRequest.open(
-    "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true
+    "GET","data.json",true
   );
   ajaxRequest.send();
 

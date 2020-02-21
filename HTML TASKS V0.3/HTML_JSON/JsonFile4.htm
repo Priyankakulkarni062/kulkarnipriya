@@ -4,7 +4,7 @@
 <div id="parent"></div>
 
 
-<button type="button" onclick="myFunction()">Hide content of p</button>
+
 			
 
 <script>
@@ -14,31 +14,45 @@ ajaxRequest.onreadystatechange = function() {
     var jsondata = JSON.parse(ajaxRequest.responseText);
     var info = jsondata.hits;
 
+
     var parent = document.getElementById('parent');
     var cont = document.createElement("div");
+   
     parent.appendChild(cont);
-    
     for(i=0;i<info.length;i++){
 
   var card=document.createElement("div");
   cont.appendChild(card);
-  cont.style="background:#32BDD2";
+  cont.style="background:#41A6DF;padding:2%;";
   
   
   var image = document.createElement("img");
   cont.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:120px;padding-right:10px";
-
-var text = document.createElement("div");
-  cont.appendChild(text);
-  text.innerHTML = info[i].user;
-  text.style="float:left;padding-right:10px";
   
-    var text = document.createElement("div");
-  cont.appendChild(text);
+  image.style="width:120px;padding-bottom:20px;padding-right:10px";
+
+  var text = document.createElement("div");
+  cont.appendChild(text); 
+  text.innerHTML = info[i].types;
+  text.style="padding-bottom:5px";
+
+  var text = document.createElement("div");
+  cont.appendChild(text); 
+  text.innerHTML = info[i].user;
+  text.style="padding-bottom:5px";
+
+  var text = document.createElement("div");
+  cont.appendChild(text); 
   text.innerHTML = info[i].tags;
-  text.style="float:right";
+  text.style="padding-bottom:10px";
+
+  var button = document.createElement("button");
+    cont.appendChild(button);
+    button.innerHTML = "NEXT";
+  
+      button.style="color:#00000029;border-radius:10px;";
+    button.onclick =myFunction();
  }
 
   
@@ -49,6 +63,13 @@ var text = document.createElement("div");
     "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true
   );
   ajaxRequest.send();
+
+  function myFunction(){
+
+   window.open('JsonFile5.htm',false);
+     
+  } 
+  
 
 </script>
 </body>
