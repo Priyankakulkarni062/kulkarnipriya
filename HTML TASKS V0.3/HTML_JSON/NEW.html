@@ -54,16 +54,16 @@
                                             <div style="width: 100%;">
                                                 <div>
                                                     <div style="background-color: #FFFFFF;float: left;width:89%;">
-                                                        <img src="request-icons-02.png" width="35px" height="35px">
+                                                        <img src="../images/request-icons-02.png" width="35px" height="35px">
                                                      </div>
                                                     <div style="background-color: #FFFFFF;float: left;width:4%;" >
-                                                        <img src="request-icons-40.png" width="35px" height="35px">
+                                                        <img src="../images/request-icons-40.png" width="35px" height="35px">
                                                     </div>
                                                     <div  style="background-color: #FFFFFF;float: left;width:5%;">
                                                         <p>JOHN</p> 
                                                     </div>
                                                     <div style="background-color: #FFFFFF;float: left;width:2%;">
-                                                        <img src="request-icons-05.png"; height="20" width="20"> 
+                                                        <img src="../images/request-icons-05.png"; height="20" width="20"> 
                                                     </div>
                                                     <div style="clear: left;"></div>
                                                 </div>
@@ -143,7 +143,7 @@
                                                             </div>
                                                             <div>
                                                                 <div>
-                                                                    <div class="circle" style="margin-left: 39px;margin-bottom: 443px;" >6</div>
+                                                                    <div class="circle" style="margin-left: 39px;margin-bottom: 520px;" >6</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -167,7 +167,7 @@
                                                                                         <div style="width: 10%;text-align: left;font: Bold 12px/14px Roboto;letter-spacing: 0.9px;color: #505050;">ADD PEOPLE</div>
                                                                                     </div>
                                                                                     <div style="float: left;width: 5%;padding-top: 10px;">
-                                                                                        <img src="request-icons-10.png"; height="40" width="40">
+                                                                                        <img src="../images/request-icons-10.png"; height="40" width="40">
                                                                                                                                         
                                                                                     </div>
                                                                                 </div>
@@ -207,31 +207,33 @@
                                                                                           var text = document.createElement("div");
                                                                                           cont.appendChild(text);
                                                                                           text.innerHTML = info[i].data;
-                                                                                          text.style="float:left;padding-right:50px;width:630px;padding-bottom:50px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
+                                                                                          text.style="float:left;padding-right:120px;width:630px;padding-bottom:50px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
                                                                                          
                                                                                         
-                                                                                          var text = document.createElement("div");
-                                                                                          cont.appendChild(text);
-                                                                                          text.innerHTML = info[i].type;
-                                                                                          text.style="float:left;padding-right:30px;padding-top:20px;font: Regular 8px/10px Roboto;letter-spacing: 0.78px;color: #747474;";
+                                                                                          
                                                                                         
                                                                                           var text = document.createElement("div");
                                                                                           cont.appendChild(text);
                                                                                           text.innerHTML = info[i].no;
-                                                                                          text.style="float:left;padding-right:30px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
+                                                                                          text.style="float:left;padding-right:45px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
                                                                                         
                                                                                           var text = document.createElement("div");
                                                                                           cont.appendChild(text);
                                                                                           text.innerHTML = info[i].date;
-                                                                                          text.style="float:left;padding-right:30px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
+                                                                                          text.style="float:left;padding-right:98px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
                                                                                         
                                                                                           var text = document.createElement("div");
                                                                                           cont.appendChild(text);
                                                                                           text.innerHTML = info[i].amount;
-                                                                                          text.style="float:left;padding-right:30px;padding-bottom:30px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
+                                                                                          text.style="float:left;padding-right:50px;padding-bottom:30px;padding-top:20px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;";
 
                                                                                           
-  
+                                                                                            
+                                                                                         var image = document.createElement("img");
+                                                                                                  cont.appendChild(image);
+                                                                                                     image.src= info[i].image;
+                                                                                                     image.style="float:left;width:40px;padding-bottom:30px;padding-top:10px;";
+
                                                                                          
                                                                                           
                                                                                         
@@ -248,7 +250,7 @@
                                                                                           };
                                                                                         
                                                                                            ajaxRequest.open(
-                                                                                            "GET","data4.json",true
+                                                                                            "GET","data2.json",true
                                                                                           );
                                                                                           ajaxRequest.send();
                                                                                         
@@ -281,7 +283,7 @@
                                                                                             <p style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;">Rs 45,000</p>
                                                                                         </div>
                                                                                         <div style="width: 5%;float: left;">
-                                                                                            <img src="request-icons-11.png" style="width:40px;height:40px;">
+                                                                                            <img src="../images/request-icons-11.png" style="width:40px;height:40px;">
                                                                                         </div>
                                                                                         <div style="clear: left;"></div>
                                                                                     </div>
