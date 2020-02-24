@@ -1,19 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="movie.css">
-    <title> </title>
-</head>
-
+<html>
 <body>
-    <div id="parent">
-    </div>
-    <script src="JsonFile3.htm"></script>
-</body>
+<div id="parent"></div>
 
+
+
+			
+
+<script>
+var ajaxRequest = new XMLHttpRequest();
+ajaxRequest.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var jsondata = JSON.parse(ajaxRequest.responseText);
+    var info = jsondata.hits;
+   
+
+    for(i=0;i<1;i++){
+
+    var parent = document.getElementById('parent');
+    var cont = document.createElement("div");
+    var js = document.createElement("div");
+    parent.appendChild(cont);
+    cont.appendChild(js);
+    
+
+  var card=document.createElement("div");
+  cont.appendChild(card);
+  cont.style="background:#E6AF2E;padding:2%;";
+  
+  
+  var image = document.createElement("img");
+  cont.appendChild(image);
+  image.src= info[i].webformatURL;
+  
+  image.style="width:120px;float:left;padding-bottom:20px;padding-right:10px";
+
+
+  
+    var text = document.createElement("div");
+  cont.appendChild(js);
+  js.appendChild(text);
+  text.innerHTML = info[i].tags;
+ 
+
+ 
+  var text = document.createElement("div");
+  js.appendChild(text); 
+  text.innerHTML = info[i].types;
+  text.style="padding-bottom:20px";
+
+  
+
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.style="clear:both";
+
+
+ 
+  
+ }
+
+  
+  }
+  };
+
+   ajaxRequest.open(
+    "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true
+  );
+  ajaxRequest.send();
+
+  
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<div id="parent"></div>
+
+<script>
+var ajaxRequest = new XMLHttpRequest();
+ajaxRequest.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var jsondata = JSON.parse(ajaxRequest.responseText);
+    var info = jsondata.hits;
+
+    var parent = document.getElementById('parent');
+    var cont = document.createElement("div");
+    parent.appendChild(cont);
+
+
+  for(i=0;i<1;i++){
+
+  var card=document.createElement("div");
+  cont.appendChild(card);
+  cont.style="background:#32BDD2";
+
+  var image = document.createElement("img");
+  cont.appendChild(image);
+  image.src= info[i].webformatURL;
+  
+  image.style="width:120px;padding-bottom:20px;padding-right:10px;padding-right:50px;";
+  
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.innerHTML = info[i].type;
+  text.style="padding-right:30px;";
+ 
+
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.innerHTML = info[i].tags;
+  text.style="padding-right:30px;";
+
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.innerHTML = info[i].user;
+  text.style="padding-right:30px;padding-bottom:30px";
+
+ 
+  
+
+  var text = document.createElement("div");
+  cont.appendChild(text);
+  text.style="clear:both";
+ 
+  
+   }
+  }
+  };
+
+   ajaxRequest.open(
+    "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true
+  );
+  ajaxRequest.send();
+
+</script>
+</body>
 </html>

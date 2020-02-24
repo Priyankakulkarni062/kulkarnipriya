@@ -17,6 +17,7 @@ ajaxRequest.onreadystatechange = function() {
 
     var parent = document.getElementById('parent');
     var cont = document.createElement("div");
+    
    
     parent.appendChild(cont);
     for(i=0;i<info.length;i++){
@@ -30,29 +31,33 @@ ajaxRequest.onreadystatechange = function() {
   cont.appendChild(image);
   image.src= info[i].webformatURL;
   
-  image.style="width:120px;padding-bottom:20px;padding-right:10px";
+  image.style="width:120px;float:left;padding-bottom:20px;padding-right:10px;float:left;padding-right:50px;";
 
-  var text = document.createElement("div");
-  cont.appendChild(text); 
-  text.innerHTML = info[i].types;
-  text.style="padding-bottom:5px";
 
-  var text = document.createElement("div");
-  cont.appendChild(text); 
-  text.innerHTML = info[i].user;
-  text.style="padding-bottom:5px";
-
-  var text = document.createElement("div");
-  cont.appendChild(text); 
-  text.innerHTML = info[i].tags;
-  text.style="padding-bottom:10px";
-
-  var button = document.createElement("button");
-    cont.appendChild(button);
-    button.innerHTML = "NEXT";
   
-      button.style="color:#00000029;border-radius:10px;";
-    button.onclick =myFunction();
+   
+
+    var button = document.createElement("div");
+    cont.appendChild(button);
+    button.id="btn";
+    button.innerHTML = "NEXT";
+
+   button.style="color:#00000029;border-radius:10px;float:left;background-color:#E6AF2E";
+ button.onclick=function myFunction(){
+
+
+window.location.replace('JsonFile5.htm',true);
+  
+} 
+
+ 
+  
+
+
+    var text = document.createElement("div");
+  cont.appendChild(text);
+  text.style="clear:both";
+  
  }
 
   
@@ -64,11 +69,6 @@ ajaxRequest.onreadystatechange = function() {
   );
   ajaxRequest.send();
 
-  function myFunction(){
-
-   window.open('JsonFile5.htm',false);
-     
-  } 
   
 
 </script>
