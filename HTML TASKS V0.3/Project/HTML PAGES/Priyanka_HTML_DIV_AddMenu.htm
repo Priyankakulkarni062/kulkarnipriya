@@ -1,0 +1,21 @@
+<html>
+<body>
+<img src="images/add.png" onclick="myFunction()" style="height: 30px; width: 30px;margin-left: 100px;">
+
+<div id="myDIV" style= "display: none;">
+<div>EDIT</div>
+<div>DELETE</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

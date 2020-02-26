@@ -36,18 +36,38 @@
     border-radius: 50%;
     display: inline-block;
   }
-
+.hidden{
+    display:none;
+}
 
 </style>
 <script>
  function Function(){
       
       window.location.replace("Priyanka_HTML_DIV_RequisitionForm3(18).htm");
-           
-            
+           }
+           function myFunction(){
+      
+      window.location.replace("Priyanka_HTML_DIV_AddPeople(10).htm");
+           }
+           function myFunction1() {
+            var image=document.getElementById("img1");
+        var hideinputs=document.getElementsByClassName("hidden");  
 
 
+for(var i=0;i!=hideinputs.length;i++)
+        {
+            if(image.click)
+            {
+                hideinputs[i].style.display="block";
+            }
+            else
+            {
+                hideinputs[i].style.display="none";
+            }
         }
+
+}
 
 </script>
 
@@ -74,7 +94,7 @@
                                                         <p>JOHN</p> 
                                                     </div>
                                                     <div style="background-color: #FFFFFF;float: left;width:2%;">
-                                                        <img src="../images/request-icons-05.png"; height="20" width="20"> 
+                                                        <img src="../images/request-icons-05.png"; height="20" width="20"  > 
                                                     </div>
                                                     <div style="clear: left;"></div>
                                                 </div>
@@ -154,14 +174,14 @@
                                                             </div>
                                                             <div>
                                                                 <div>
-                                                                    <div class="circle" style="margin-left: 39px;margin-bottom: 520px;" >6</div>
+                                                                    <div class="circle" style="margin-left: 39px;margin-bottom: 320px;" >6</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                 
                                                     </div>
                                                 
-                                                    <div style="float: left;width:90%;background-color: #FFFFFF;">
+                                                    <div style="float: left;width:90%;background-color:#FCFCFC;">
                                                         <div style="width: 100%;">
                                                             <div>
                                                                 <div >
@@ -186,8 +206,9 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                       
                                                                         <div>
-                                                                            <div style="padding-left:20px;padding-right:20px;background: #FFFFFF 0% 0% no-repeat padding-box;height: 190%;">
+                                                                            <div style="padding-left:20px;padding-right:20px;background: #FCFCFC 0% 0% no-repeat padding-box;height: 190%;">
                                                                                 <div style="width: 100%;">
                                                                                     <div>
                                                                                        
@@ -243,8 +264,12 @@
                                                                                                   cont.appendChild(image);
                                                                                                      image.src= info[i].image;
                                                                                                      image.style="float:left;width:40px;padding-bottom:30px;padding-top:10px;";
+                                                                                                     onclick="myFunction1()";
+                                                                                                     image.id="img1";
+  
 
-                                                                                         
+                                                                                                     
+                                                                    
                                                                                           
                                                                                         
                                                                                           var text = document.createElement("div");
@@ -273,40 +298,14 @@
                                                                             </div>
                                                                         </div>
                                                                         <div>
-                                                                            <div style="padding:20px;background: #FFFFFF 0% 0% no-repeat padding-box;border: 1px solid #F0F0F0;height: 30%;">
-                                                                                <div style="width: 100%;">
-                                                                                    <div>
-                                                                                        <div style="width: 50%;float: left;">
-                                                                                            <p style="text-align: left;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;">
-                                                                                                daptec 128 MB Raid Controller Pair. Pci-e SAS/SATA
-                                                                                            </p>
-                                                                                            <p style="text-align: left;font: Bold 10px/18px Roboto;letter-spacing: 0.65px;color: #747474;">READ MORE</p>
-                                                                                        </div>
-                                                                                        <div style="width: 15%;float: left;">
-                                                                                            <span style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;float:right;padding-top: 15px;">01</span>
-                                                                                        </div>
-                                                                                        <div style="width: 15%;float: left;">
-                                                                                            <p style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;">10 Jul 2019</p>
-                                                                                        </div>
-                                                                                        <div style="width: 15%;float: left;">
-                                                                                            <p style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;">Rs 45,000</p>
-                                                                                        </div>
-                                                                                        <div style="width: 5%;float: left;">
-                                                                                            <img src="../images/request-icons-11.png" style="width:40px;height:40px;">
-                                                                                        </div>
-                                                                                        <div style="clear: left;"></div>
-                                                                                    </div>
-                                                                                    </div>
-                                                                               
-                                                                               
-                                                                            </div>
+                                                                          
                                                                         </div> 
                                                                         </div>
                                                                 </div>
                                                             </div>
                                                             <div>
                                                                 <div>
-                                                                    <div style="width: 100%;padding-top: 47px;padding-bottom: 30px;">
+                                                                    <div style="width: 100%;padding-top: 52px;padding-bottom: 10px;">
                                                                         <div>
                                                                             <div style="width: 70%;float: left;">
                                                                                 <div style="float: left;font: SemiBold 12px Gibson;letter-spacing: 1.2px;color: #595959;"><p style="border-bottom: solid;text-align: left;">SAVE DRAFT</p></div>
