@@ -29,27 +29,23 @@
   
  }
  
-function myFunction(){
-    Function1();
-    Function2();
-}
+
            
-
-        
-
-       
-
-
-        function Function2(){
+        function Function2(URL){
       
-      window.location.replace("Priyanka_HTML_DIV_MyRequestPage9.htm");
+      window.location=URL;
+        }
+
+        function Function3(){
+      
+      window.location.replace("Priyanka_HTML_DIV_ForgotPasswordWithError.htm");
+
            
             
 
 
         }
 
-       
     </script>
 </head>
 
@@ -101,7 +97,7 @@ function myFunction(){
                                                                                     <input type="checkbox" name="Remember me"><span style="text-align: left;font: Regular 10px Roboto;letter-spacing: 0;color: #707070;margin-top: 30px;">Remember me</span> 
                                                                                 </div>
                                                                                 <div style="width: 29%;float: right;">
-                                                                                    <span style="text-align: right;font: Regular 10px/23px Roboto;letter-spacing: 0;color: #707070;border-bottom: solid" onclick="Function1()" > Forgot Password </span>
+                                                                                    <span style="text-align: right;font: Regular 10px/23px Roboto;letter-spacing: 0;color: #707070;border-bottom: solid" onclick="Function3()" > Forgot Password </span>
                                                                                 </div>
                                                                                 <div style="clear:left;"></div>
                                                                             </div>
@@ -109,7 +105,7 @@ function myFunction(){
                                                                         </div>
                                                                             <div>
                                                                                     <div>
-                                                                                            <input type="button" value="LOGIN" id="btn"  style="font-size:15px;background-color:#32BDD2; border-radius: 35px; size:90px;margin-top:5%;padding: 12px 40px;box-shadow: 1px 1px 5px 1px #00000040;font: Bold 12px/14px Roboto;color: #FFFFFF;margin-bottom: 40px;margin-top: 30px" size="95" onclick="myFunction();">
+                                                                                            <input type="button" value="LOGIN" id="btn"  style="font-size:15px;background-color:#32BDD2; border-radius: 35px; size:90px;margin-top:5%;padding: 12px 40px;box-shadow: 1px 1px 5px 1px #00000040;font: Bold 12px/14px Roboto;color: #FFFFFF;margin-bottom: 40px;margin-top: 30px" size="95" ondblclick="Function2('Priyanka_HTML_DIV_MyRequestPage9.htm');" onclick="Function1();">
                                                                                     </div>
                                                                                 </div>
                                                                              
