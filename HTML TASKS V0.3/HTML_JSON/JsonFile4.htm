@@ -20,7 +20,8 @@ ajaxRequest.onreadystatechange = function() {
     
    
     parent.appendChild(cont);
-    for(i=0;i<info.length;i++){
+    for(i=0;i<info.length;i++)
+    {
 
   var card=document.createElement("div");
   cont.appendChild(card);
@@ -33,16 +34,13 @@ ajaxRequest.onreadystatechange = function() {
   
   image.style="width:120px;float:left;padding-bottom:20px;padding-right:10px;float:left;padding-right:50px;";
 
-
-  
-   
-
   var button = document.createElement("div");
     cont.appendChild(button);
     button.id="btn";
     button.innerHTML = "NEXT";
 
-   button.style="color:#00000029;border-radius:10px;float:left;background-color:#E6AF2E";
+ button.style="color:#00000029;border-radius:10px;float:left;background-color:#E6AF2E";
+ 
  button.onclick=function myFunction(){
 
 
@@ -50,12 +48,7 @@ window.location.replace('JsonFile5.htm',true);
   
 } 
     
-
- 
-  
-
-
-    var text = document.createElement("div");
+   var text = document.createElement("div");
   cont.appendChild(text);
   text.style="clear:both";
   

@@ -38,6 +38,7 @@
   }
 
 
+
 </style>
 <script>
     
@@ -79,7 +80,7 @@
 
             }
             else{
-                c.style.position = "initial";
+                c.style.position = "absolute";
                 d.style.display = "none";
                
             }
@@ -89,6 +90,43 @@
       window.location.replace("Priyanka_HTML_DIV_ReqisitionForm2.htm");
            }
 
+           function my()
+           {
+               var dots=document.getElementById("dots");
+               var read=document.getElementById("read");
+               var btn=document.getElementById("btn");
+               if(dots.style.display=="none")
+               {
+                   dots.style.display="inline";
+                   btn.innerHTML="READ MORE";
+                   read.style.display="none";
+
+               }
+               else
+               {
+                   dots.style.display="none";
+                   btn.innerHTML="READ LESS";
+                   read.style.display="inline";
+               }
+           }
+function my1(){
+    var dots=document.getElementById("dots1");
+               var read=document.getElementById("read1");
+               var btn=document.getElementById("btn1");
+               if(dots.style.display=="none")
+               {
+                   dots.style.display="inline";
+                   btn.innerHTML="READ MORE";
+                   read.style.display="none";
+
+               }
+               else
+               {
+                   dots.style.display="none";
+                   btn.innerHTML="READ LESS";
+                   read.style.display="inline";
+               }
+}
 </script>
     </head>
     <body>
@@ -200,7 +238,7 @@
                                                 
                                                     </div>
                                                 
-                                                    <div style="float: left;width:90%;background-color: #FFFFFF;">
+                                                    <div style="float: left;width:90%;background-color: #FCFCFC;">
                                                         <div style="width: 100%;">
                                                             <div>
                                                                 <div >
@@ -231,10 +269,10 @@
                                                                                         <div style="width: 50%;float: left;">
                                                                                             <p style="text-align: left;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;">
                                                                                                 IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB) / STD MEMORY 8GB X 1/ MAX. MEMORY
-                                                                                                64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated
-                                                                                                RAID 0,1,5,10 (RAID 121i).
+                                                                                                64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD.<span id="dots">...</span><span id="read" style="display: none;"> HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated
+                                                                                                RAID 0,1,5,10 (RAID 121i).</span></p>
                                                                                             </p>
-                                                                                            <p style="text-align: left;font: Bold 10px/18px Roboto;letter-spacing: 0.65px;color: #747474;">READ MORE</p>
+                                                                                            <p style="text-align: left;font: Bold 10px/18px Roboto;letter-spacing: 0.65px;color: #747474;" onclick="my();" id="btn">READ MORE</p>
                                                                                         </div>
                                                                                         <div style="width: 15%;float: left;">
                                                                                             <span style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;float:right;padding-top: 15px;">01</span>
@@ -283,10 +321,10 @@
                                                                                         <div style="width: 50%;float: left;">
                                                                                             <p style="text-align: left;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;">
                                                                                                 IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB) / STD MEMORY 8GB X 1/ MAX. MEMORY
-                                                                                                64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated
-                                                                                                RAID 0,1,5,10 (RAID 121i).
+                                                                                                64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD.<span id="dots1">...</span><span id="read1" style="display: none;"> HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated
+                                                                                                RAID 0,1,5,10 (RAID 121i).</span></p>
                                                                                             </p>
-                                                                                            <p style="text-align: left;font: Bold 10px/18px Roboto;letter-spacing: 0.65px;color: #747474;">READ MORE</p>
+                                                                                            <p style="text-align: left;font: Bold 10px/18px Roboto;letter-spacing: 0.65px;color: #747474;"  onclick="my1();" id="btn1">READ MORE</p>
                                                                                         </div>
                                                                                         <div style="width: 15%;float: left;">
                                                                                             <span style="text-align: center;font: Regular 12px/66px Roboto;letter-spacing: 0.6px;color: #707070;float:right;padding-top: 15px;">01</span>

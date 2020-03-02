@@ -16,9 +16,8 @@ ajaxRequest.onreadystatechange = function() {
     var parent = document.getElementById('parent');
     var cont = document.createElement("div");
     parent.appendChild(cont);
- 
 
-  for(i=0;i<1;i++){
+i=0;
 
   var card=document.createElement("div");
   cont.appendChild(card);
@@ -48,8 +47,7 @@ ajaxRequest.onreadystatechange = function() {
   var text = document.createElement("div");
   cont.appendChild(text);
   text.style="clear:both";
-  
-   }
+  i++;
   }
   };
 
